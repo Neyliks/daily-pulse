@@ -14,7 +14,7 @@ Built with 💻 React + TypeScript + TailwindCSS + Zustand (for now)
 
 ## ？ Why am I building this
 
-Daily Pulse is a tool that will help me learn and practice my skills in acton.
+Daily Pulse is a tool that will help me learn and practice my skills in action.
 
 ## 🧱 Tech Stack
 
