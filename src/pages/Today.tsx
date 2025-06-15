@@ -1,8 +1,15 @@
+import HabitCard from '../components/HabitCard'
+import { TrackerStore } from '../store/TrackerStore'
+
 function Today() {
+  const habits = TrackerStore((state) => state.habits)
   return (
-    <>
-      <h1>This is Today.tsx!</h1>
-    </>
+    <div>
+      <h1 className="text-2xl font-bold mb-4">Your Habits for Today</h1>
+      {habits.map((habit) => (
+        <HabitCard key={habit.id} name={habit.name} />
+      ))}
+    </div>
   )
 }
 

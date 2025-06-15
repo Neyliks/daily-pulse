@@ -2,13 +2,13 @@ import { NavLink } from 'react-router-dom'
 
 function Header() {
     return (
-        <header className="bg-gray-50 shadow px-4 py-3 flex gap-4">
-            <h1>Daily Pulse</h1>
+        <header className="bg-gray-100 shadow px-4 py-3 flex gap-4">
+            <h1 className="text-emerald-600 font-bold">Daily Pulse</h1>
             <NavLink
                 to="/"
                 end
                 className={({ isActive }) =>
-                isActive ? 'text-blue-600 font-semibold' : 'text-gray-600'
+                isActive ? 'text-emerald-600 font-semibold' : 'text-gray-600'
                 }
             >
             Home
@@ -17,7 +17,7 @@ function Header() {
                 to="/today"
                 end
                 className={({ isActive }) =>
-                isActive ? 'text-blue-600 font-semibold' : 'text-gray-600'
+                isActive ? 'text-emerald-600 font-semibold' : 'text-gray-600'
                 }
             >
             Today
@@ -25,7 +25,7 @@ function Header() {
             <NavLink
                 to="/history"
                 className={({ isActive }) =>
-                isActive ? 'text-blue-600 font-semibold' : 'text-gray-600'
+                isActive ? 'text-emerald-600 font-semibold' : 'text-gray-600'
                 }
             >
                 History
